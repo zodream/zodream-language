@@ -1,0 +1,26 @@
+ <!-- 等分成两行两列，自动排列布局 -->
+<grid rows="2" columns="2" auto>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+</grid>
+ <!-- 等分成两行两列，自动排列布局，允许滚动条，不能使用 * 等比方式 -->
+<grid rows="2" columns="2" scroll="none/all/x/y">
+    <!-- 占据第一行第二列 -->
+    <button col="1"></button>
+    <button></button>
+</grid>
+ <!-- 死定行列的高及个数 -->
+<grid rows="20 30 * 50" columns="20 *">
+    <button col="1"></button>
+    <button></button>
+</grid>
+<!-- 指定内容的对其方式 -->
+<box horizontal="none/left/center/right" vertical="none/top/middle/bottom">
+    <textbox>
+</box>
+<swiper space="1s" auto>
+    <img src="" alt="">
+    <item>1</item>
+</swiper>
