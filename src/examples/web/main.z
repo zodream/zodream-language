@@ -1,0 +1,12 @@
+
+import (
+    fmt
+    net/http
+)
+
+
+: Main(args string[])
+    if args.length > 0
+        fmt.Printf("123123")
+    app := http.New()
+    

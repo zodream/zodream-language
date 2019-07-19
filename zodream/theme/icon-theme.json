@@ -1,0 +1,14 @@
+{
+    "iconDefinitions": {
+        "_z_file": {
+            "iconPath": "../images/z.svg"
+        }
+    },
+    "fileExtensions": {
+        "z": "_z_file"
+    },
+    "fileNames": {
+        ".z": "_z_file",
+        ".zo": "_z_file"
+    }
+}

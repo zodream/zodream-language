@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 103" width="85" height="103">
+	<style>
+		tspan { white-space:pre }
+		.txt0 { font-size: 141px;fill: #000000;font-family: "DejaVu Sans";font-weight: 400 } 
+	</style>
+	<text id="Z " style="transform: matrix(1,0,0,1,-6,103)" >
+		<tspan x="0" y="0" class="txt0">Z</tspan>
+	</text>
+</svg>

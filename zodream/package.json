@@ -1,0 +1,124 @@
+{
+	"name": "zodream",
+	"displayName": "zodream",
+	"description": "zo",
+    "version": "0.0.1",
+    "icon": "images/icon.png",
+    "publisher": "zodream",
+    "license":"See License section in README.md",
+    "homepage":"https://github.com/zodream/zodream-language/blob/master/README.md",
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/zodream/zodream-language.git"
+    },
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Themes",
+		"Snippets",
+		"Programming Languages"
+	],
+	"activationEvents": [
+		"onCommand:zo.beautify"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"themes": [
+            {
+                "id": "dev-light-zp",
+                "label": "zo Development Light",
+                "uiTheme": "vs",
+                "path": "theme/dev-light-color-theme.json"
+            },
+            {
+                "id": "dev-dark-zo",
+                "label": "zo Development Dark",
+                "uiTheme": "vs-dark",
+                "path": "theme/dev-dark-color-theme.json"
+            }
+        ],
+		"snippets": [
+            {
+                "language": "zo",
+                "path": "snippets/snippets.json"
+            }
+        ],
+		"languages": [
+            {
+                "id": "zo",
+                "aliases": [
+                    "Z"
+                ],
+                "extensions": [
+                    ".z",
+                    ".zo"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+		"grammars": [
+            {
+                "language": "zo",
+                "scopeName": "source.z",
+                "path": "./syntaxes/zo.tmLanguage.json"
+            }
+        ],
+		"configuration": {
+            "title": "zo",
+            "properties": {
+                "zo.format.enable": {
+                    "scope": "resource",
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Enable/disable the zo formatter (not yet implemented)."
+                }
+            }
+        },
+		"configurationDefaults": {
+            "[zo]": {
+                "editor.insertSpaces": true,
+                "editor.formatOnSave": true,
+                "editor.codeActionsOnSave": {
+                    "source.organizeImports": true
+                }
+            }
+        },
+		"commands": [
+			{
+				"command": "zo.beautify",
+                "title": "Beautify zo"
+			}
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "when": "editorLangId == zo",
+                    "command": "zo.beautify",
+                    "group": "1_modification"
+                }
+            ]
+        }
+	},
+	"scripts": {
+        "vscode:prepublish": "npm run compile",
+        "build": "vsce package",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"ya": "npx js-yaml syntaxes/zo.tmLanguage.yaml > syntaxes/zo.tmLanguage.json"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.36.0",
+		"glob": "^7.1.4",
+		"js-yaml": "^3.13.1",
+		"mocha": "^6.1.4",
+		"tslint": "^5.12.1",
+		"typescript": "^3.3.1"
+	},
+	"dependencies": {
+		"vscode-languageclient": "^5.2.1"
+	}
+}
