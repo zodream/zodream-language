@@ -950,7 +950,7 @@
 				{
 					"comment": "Keyword Control",
 					"name": "keyword.control.z",
-					"match": "\\b(in|or|break|continue|switch|case|default|match|if|else|for|go|goto|defer|return)\\b"
+					"match": "\\b(in|or|break|continue|switch|case|default|match|if|else|for|go|goto|defer|return|def|ret)\\b"
 				},
 				{
 					"name": "keyword.control.z",

@@ -1,12 +1,16 @@
 
 import (
     fmt
-    net/http
+    net/http/Server
 )
 
-
-: Main(args string[])
-    if args.length > 0
+pub fn Main(args string[]) {
+    if args.length > 0 {
         fmt.Printf("123123")
-    app := http.New()
-    
+    }
+    app := Server.New()
+    app.Party('app', () => {
+        app.Handle("/", )
+    })
+    app.Listen(port=8080)
+}
