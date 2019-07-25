@@ -1,0 +1,7 @@
+
+
+View(file string)
+    // 
+
+Json(data interface{})
+    //

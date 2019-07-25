@@ -1,0 +1,11 @@
+@(
+    net/http/Context
+)
+
+: Index(ctx Context)
+    ctx.View("auth/login.zo")
+
+: Login(ctx Context)
+    email := ctx.Get<string>("email")
+    password := ctx.Get<string>("password")
+    

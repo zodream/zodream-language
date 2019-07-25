@@ -1,0 +1,9 @@
+@(
+    net/http/Server
+)
+
+: Register(app Http)
+    app.Any("/", )
+    app.Party('auth', () => {
+        app.Get("/", )
+    })

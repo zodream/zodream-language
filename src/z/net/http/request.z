@@ -1,0 +1,4 @@
+
+
+Get<T>(name string, default T) T
+    ret default

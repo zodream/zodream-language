@@ -1,0 +1,4 @@
+
+
+: Login(email string, password string) User
+    ret new User

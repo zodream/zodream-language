@@ -9,8 +9,6 @@ pub fn Main(args string[]) {
         fmt.Printf("123123")
     }
     app := Server.New()
-    app.Party('app', () => {
-        app.Handle("/", )
-    })
+    Router.Register(app)
     app.Listen(port=8080)
 }

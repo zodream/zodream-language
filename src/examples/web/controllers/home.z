@@ -1,0 +1,6 @@
+@(
+    net/http/Context
+)
+
+: Index(ctx Context)
+    ctx.View("home.zo")
