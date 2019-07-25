@@ -1,15 +1,11 @@
-module http
 
-struct Server {
-    
-}
+
+(): Router
 
 
 
-pub fn (s Server) Listen(host string, port int) {
-    
-}
+Listen(host string, port int)
+    //
 
-pub fn New(): Server {
-    ret new Server;
-}
+: New() Server
+    ret new Server

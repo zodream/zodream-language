@@ -1,0 +1,10 @@
+
+
+Get(path string, handle fn)
+    //
+
+Any(path string, handle fn)
+    //
+
+Post(path string, handle fn)
+    //
