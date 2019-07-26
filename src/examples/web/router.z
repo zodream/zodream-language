@@ -1,9 +1,12 @@
 @(
     net/http/Server
+    ... controllers
+    auth
+    auth/Home as Auth
 )
 
 : Register(app Http)
-    app.Any("/", )
+    app.Any("/", Home.Index)
     app.Party('auth', () => {
-        app.Get("/", )
+        app.Get("/", auth/Home.Index)
     })
