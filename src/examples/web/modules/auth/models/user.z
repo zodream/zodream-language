@@ -1,4 +1,9 @@
 
 
 : Login(email string, password string) User
+    if !IsRegister(email)
+        ret nil;
     ret new User
+
+: IsRegister(email string)
+    ret true

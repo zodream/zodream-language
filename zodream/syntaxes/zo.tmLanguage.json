@@ -153,7 +153,7 @@
 				{
 					"patterns": [
 						{
-							"match": "(in|or|switch|case|match|if|else|for|go|goto|defer|return)(?=\\s*\\()",
+							"match": "(in|or|switch|case|match|if|else|for|go|goto|defer|return|ret)(?=\\s*\\()",
 							"captures": {
 								"1": {
 									"name": "keyword.control.z"
