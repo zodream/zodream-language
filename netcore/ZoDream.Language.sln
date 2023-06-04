@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33606.364
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoDream.Language", "ZoDream.Language\ZoDream.Language.csproj", "{501A5337-C4D7-47E0-B9F0-FD52A8AD9CD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoDream.Tests", "ZoDream.Tests\ZoDream.Tests.csproj", "{BB14EF49-DB22-4706-9A71-471DBCE5F329}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{501A5337-C4D7-47E0-B9F0-FD52A8AD9CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{501A5337-C4D7-47E0-B9F0-FD52A8AD9CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{501A5337-C4D7-47E0-B9F0-FD52A8AD9CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{501A5337-C4D7-47E0-B9F0-FD52A8AD9CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB14EF49-DB22-4706-9A71-471DBCE5F329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB14EF49-DB22-4706-9A71-471DBCE5F329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB14EF49-DB22-4706-9A71-471DBCE5F329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB14EF49-DB22-4706-9A71-471DBCE5F329}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53228D4D-184F-477B-A678-7EAEBBA2ACD8}
+	EndGlobalSection
+EndGlobal
